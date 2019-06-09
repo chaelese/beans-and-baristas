@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+    <link rel="stylesheet" href="./main.css" />
+
+    <!--    leaflet css-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+
+
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+
+    <!-- Load Esri Leaflet from CDN -->
+    <!--   <script src="https://unpkg.com/esri-leaflet@2.2.4/dist/esri-leaflet.js" integrity="sha512-
+tyPum7h2h36X52O2gz+Pe8z/3l+Y9S1yEUscbVs5r5aEY5dFmP1WWRY/WLLElnFHa+k1JBQZSCDGwEAnm2IxAQ==" crossorigin=""></script> --->
+
+
+    <!-- <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+
+
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+
+    <!--load carto code for maps -->
+
+    <!-- <link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+    <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script> -->
+
+    <!--    <link rel="stylesheet" href="https://chaelese.carto.com/builder/2da1b663-e77e-452b-81d5-0df8f42bf7f2/embed" />-->
+
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!-- <link href="/favicon.ico" type="image/x-icon" rel="icon" /> -->
+
+    <!-- load in google fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--    <div id="mapid"></div>-->
+    <div class="app-container">
+        <div class="nav-container">
+            <div><img id="logo" src="https://skoda-wlc.s3.amazonaws.com/2/2019/03/coffee-beans-pexels-9186-CVR.jpg" />
+            </div>
+            <div id="logo-name"><h2>Portland Beans and Grounds</h2></div>
+            <div id="spacer"></div>
+            <div>
+                <form>
+                    <input style="padding: 10px; font-weight: bold; border-radius: 10px;" type="button" value="View CARTO Map" onclick="window.location.href='https://chaelese.carto.com/builder/2da1b663-e77e-452b-81d5-0df8f42bf7f2/embed'" />
+                </form>
+            </div>
+        </div>
+        <div class="map-container">
+            <div id="map">
+                <!--                <iframe width="100%" height="100%" frameborder="0" src="https://chaelese.carto.com/builder/2da1b663-e77e-452b-81d5-0df8f42bf7f2/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>-->
+            </div>
+        </div>
+        <div class="side-pane-container">
+            <div id="side-pane-title">
+                Which coffee shops carry your favorite roasters?
+            </div>
+            <div><img id="latte" src="//cdn.shopify.com/s/files/1/1000/4780/products/IMG_0090_1024x1024.jpg?v=1480474145" /></div>
+            <div id="map-legend">
+                Rainy days and a strong cup of coffee go hand-in-hand. Portlanders are lucky to find so many of the best coffee roasters in the world right around the corner. All of these roasters are based and roast in Portland, OR and wholesale to many of the local coffee shops.
+                <br>
+                <br>
+        
+                This map shows <b>ten of the top Coffee Roasters in Portland, OR</b> and the some of the <b>coffee shops</b> that they distribute their roasts to.  Many of the local roasters also wholesale so you're likely to see them in grocery stores and places like the Convention Center.  
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //        $(document).ready(function() {
+        //            cartodb.createVis('map',
+        //                'https://thenewschool.carto.com/u/brelsfoeagain/api/v2/viz/79edb122-0374-11e7-b189-0e233c30368f/viz.json');
+        //        });
+
+    </script>
+    <div>
+        <script src="map.js"></script>
+    </div>
+
+</body>
+
+</html>
